@@ -51,3 +51,6 @@ var choice1Btn = document.getElementById('choice1')
 var choice2Btn = document.getElementById('choice2')
 var choice3Btn = document.getElementById('choice3')
 var choice4Btn = document.getElementById('choice4')
+
+var startButton = document.querySelector("#start");
+var timerElement = document.querySelector("#time");
