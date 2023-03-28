@@ -77,6 +77,21 @@ choice2Btn.addEventListener("click", selectAnswer);
 choice3Btn.addEventListener("click", selectAnswer);
 choice4Btn.addEventListener("click", selectAnswer);
 
+var startButton = document.querySelector("#start");
+var timerElement = document.querySelector("#time");
+
+var choicesBtn = document.querySelectorAll('choices')
+
+var wordBlank = document.querySelector("#word-blanks");
+
+var currentQuiz = 0;
+var score = 0;
+
+var timer;
+var timerCount= 70;
+var counter = document.getElementById("time");
+
+
 function selectAnswer(element){
     var selectedChoice = event.target.innerText;
     
