@@ -49,7 +49,7 @@ li {
   list-style: decimal inside none;
 }
 
-li:nth-child(odd) {
+#highscores li:nth-child(odd) {
   background-color: #f3edfc;
 }
 
@@ -85,4 +85,12 @@ li:nth-child(odd) {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+#word-blanks{
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  color: rgba(124, 121, 121, 0.89);
 }
