@@ -46,3 +46,8 @@ var choice1_text = document.getElementById('choice1_text')
 var choice2_text = document.getElementById('choice2_text')
 var choice3_text = document.getElementById('choice3_text')
 var choice4_text = document.getElementById('choice4_text')
+
+var choice1Btn = document.getElementById('choice1')
+var choice2Btn = document.getElementById('choice2')
+var choice3Btn = document.getElementById('choice3')
+var choice4Btn = document.getElementById('choice4')
