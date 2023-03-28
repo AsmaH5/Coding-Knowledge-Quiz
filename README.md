@@ -10,7 +10,7 @@ This is a timed coding quiz  with multiple-choice questions. This app runs in th
 ## Usage:
 To use this Code Quiz: You will click the 'Start Quiz' and from there a timer of 70 seconds will start and, you will be presented with your first multiple choice question.
 
-If you answer incorrectly 10 seconds is subtracted from the timer. when the game is over then can save my initials and score,
+If you answer incorrectly 10 seconds is subtracted from the timer. When the game is over then you can save your initials and score.
 
 
 ## Screenshots of Website:
