@@ -141,6 +141,14 @@ function startTimer() {
 
 }
 
+function loseQuiz(){
+    endQuiz()
+    wordBlank.textContent = "You've Run out of time!";
+}
+
+  function endQuiz() {
+    document.getElementById("final-score").innerHTML = `${score}/${quizQuestions.length}`
+  }
 
 
 startButton.addEventListener("click", startQuiz);
