@@ -9,3 +9,10 @@ if (initial){
         list.appendChild(li);
     }
 }
+
+clearHighscoresButton.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    localStorage.removeItem("initials");
+    list.style.display = 'none';
+})
