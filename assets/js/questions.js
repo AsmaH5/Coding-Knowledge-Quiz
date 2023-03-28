@@ -40,4 +40,9 @@ var quizQuestions =[{
 },
 ];
 
-
+var quiz = document.getElementById('questions'); 
+var questionEl = document.getElementById('questions');
+var choice1_text = document.getElementById('choice1_text')
+var choice2_text = document.getElementById('choice2_text')
+var choice3_text = document.getElementById('choice3_text')
+var choice4_text = document.getElementById('choice4_text')
