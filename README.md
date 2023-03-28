@@ -2,22 +2,6 @@
 
 This is a timed coding quiz  with multiple-choice questions. This app runs in the browser and features dynamically updated HTML and CSS, all powered by JavaScript code that I have written. My app has a clean and polished user interface that is responsive, that  adapts to multiple screen sizes.
 
-## Aim:
-To quiz start when the 'Start Quiz' button is clicked.
-
-Present a series of prompts for password criteria:
-* Length of password: At least 8 characters but no more than 128.
-
-* Character types:
-    Lowercase,
-    Uppercase,
-    Numeric,
-    Special characters ($@%&*, etc.)
-
-* Code should validate for each input and at least one character type should be selected.
-
-* Once all prompts are answered, the password should be generated and displayed in an alert or written to the page.
-
 ## Built with:
 * HTML
 * CSS
@@ -29,8 +13,12 @@ To use this Code Quiz: You will click the 'Start Quiz' and from there a timer of
 If you answer incorrectly 10 seconds is subtracted from the timer. when the game is over then can save my initials and score,
 
 
-## Screenshots of Website and Console:
-
+## Screenshots of Website:
+![Screenshot 4](https://user-images.githubusercontent.com/97250633/228384426-ed68cce4-dca7-4690-83ec-f0dae9a3bc98.png)
+![Screenshot 5](https://user-images.githubusercontent.com/97250633/228384430-0af96933-c5dd-4ccc-a802-b7ae198d1af0.png)
+![Screenshot 1](https://user-images.githubusercontent.com/97250633/228384432-83155b22-a94e-4a71-b413-1900e070a34a.png)
+![Screenshot 2](https://user-images.githubusercontent.com/97250633/228384433-a91cf56f-0b6e-44d5-806e-ac77906e5863.png)
+![Screenshot 3](https://user-images.githubusercontent.com/97250633/228384435-6d168931-769f-4976-9e0f-01369927c15d.png)
 
 ## Project Link:
 
