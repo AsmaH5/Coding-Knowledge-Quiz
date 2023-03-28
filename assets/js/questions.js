@@ -54,3 +54,79 @@ var choice4Btn = document.getElementById('choice4')
 
 var startButton = document.querySelector("#start");
 var timerElement = document.querySelector("#time");
+
+
+function startQuiz() {
+    startTimer()
+document.getElementById('questions').style.display = 'block';
+document.getElementById('start-screen').style.display = 'none';
+
+var currentQuizData = quizQuestions[currentQuiz]
+
+document.getElementById('question-title').innerText = currentQuizData.question
+choice1_text.innerText = currentQuizData.choice1
+choice2_text.innerText = currentQuizData.choice2
+choice3_text.innerText = currentQuizData.choice3
+choice4_text.innerText = currentQuizData.choice4
+
+}
+
+
+choice1Btn.addEventListener("click", selectAnswer);
+choice2Btn.addEventListener("click", selectAnswer);
+choice3Btn.addEventListener("click", selectAnswer);
+choice4Btn.addEventListener("click", selectAnswer);
+
+function selectAnswer(element){
+    var selectedChoice = event.target.innerText;
+    
+    if(selectedChoice === quizQuestions[currentQuiz].correct){
+        wordBlank.textContent = "Correct";
+        
+        score++;
+
+    } else {
+        wordBlank.textContent = "Incorrect";
+        timerCount = timerCount - 10
+
+    }
+
+    currentQuiz++ 
+
+    if(currentQuiz < quizQuestions.length) { 
+        startQuiz()
+    } else {
+        document.getElementById("end-screen").style.display = 'block';
+        document.getElementById('questions').style.display = 'none';
+        document.getElementById("final-score").innerHTML = `${score}/${quizQuestions.length}`
+    }
+}
+
+
+function startTimer() {
+        var timerInterval= setInterval(function(){
+
+        counter.innerHTML = timerCount + ' seconds remaining';
+        timerCount--;
+
+        if(quizQuestions.length < 5){
+            clearInterval(timerInterval);
+            endQuiz()
+            timerCount = 0;
+        }
+
+        if (timerCount <= 0) {
+            // Clears interval
+            clearInterval(timerInterval);
+            loseQuiz();
+        }
+        
+        
+}, 1000);
+
+}
+
+
+
+startButton.addEventListener("click", startQuiz);
+
